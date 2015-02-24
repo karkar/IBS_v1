@@ -45,7 +45,7 @@ app.config(function($stateProvider, $urlRouterProvider) {
     url: '/schedule',
     views: {
       schedule : {
-        templateUrl: 'schedule.html'
+        templateUrl: 'templates/schedule.html'
       }
     }
   })
@@ -54,7 +54,7 @@ app.config(function($stateProvider, $urlRouterProvider) {
     url: '/symptoms',
     views: {
       symptoms : {
-        templateUrl: 'symptoms.html'
+        templateUrl: 'templates/symptoms.html'
       }
     }
   })
@@ -63,7 +63,7 @@ app.config(function($stateProvider, $urlRouterProvider) {
     url: '/past',
     views: {
       past : {
-        templateUrl: 'past.html'
+        templateUrl: 'templates/past.html'
       }
     }
   })
@@ -72,7 +72,7 @@ app.config(function($stateProvider, $urlRouterProvider) {
     url: '/setup',
     views: {
       setup : {
-        templateUrl: 'setup.html'
+        templateUrl: 'templates/setup.html'
       }
     }
   })
