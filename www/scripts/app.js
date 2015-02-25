@@ -39,9 +39,10 @@ app.run(function($ionicPlatform) {
 });
 
 app.config(function($stateProvider, $urlRouterProvider) {
-  $urlRouterProvider.otherwise('/schedule')
+  $urlRouterProvider.otherwise('/')
 
-  $stateProvider.state('schedule', {
+  $stateProvider
+  .state('schedule', {
     url: '/schedule',
     views: {
       schedule : {
@@ -49,8 +50,7 @@ app.config(function($stateProvider, $urlRouterProvider) {
       }
     }
   })
-
-  $stateProvider.state('symptoms', {
+  .state('symptoms', {
     url: '/symptoms',
     views: {
       symptoms : {
@@ -58,8 +58,7 @@ app.config(function($stateProvider, $urlRouterProvider) {
       }
     }
   })
-
-  $stateProvider.state('past', {
+  .state('past', {
     url: '/past',
     views: {
       past : {
@@ -67,12 +66,19 @@ app.config(function($stateProvider, $urlRouterProvider) {
       }
     }
   })
-
-  $stateProvider.state('setup', {
+  .state('setup', {
     url: '/setup',
     views: {
       setup : {
         templateUrl: 'templates/setup.html'
+      }
+    }
+  })
+  .state('test', {
+    url: '/header_test',
+    views: {
+      setup : {
+        templateUrl: 'templates/header_test.html'
       }
     }
   })

@@ -19,6 +19,12 @@
 
   <body ng-app="IBSTestV2">
 
+    <ion-nav-bar class="bar-energized nav-title-slide-ios7">
+      <ion-nav-back-button class="button-clear">
+        <i class="ion-arrow-left-c"></i> Back
+      </ion-nav-back-button>
+    </ion-nav-bar>
+
     <ion-tabs class="tabs-positive tabs-icon-only">
 
       <ion-tab title="Schedule" icon-on="ion-ios7-calendar " icon-off="ion-ios7-calendar-outline" ui-sref="schedule">
@@ -43,25 +49,6 @@
 
     </ion-tabs>
 
-    <script type="text/ng-template" id="setup.html">
-      <ion-view title="setup">
-            <ion-pane>
-              <ion-header-bar class="bar-positive">
-                <h1 class="title">Setup Study</h1>
-              </ion-header-bar>
-              <ion-content>
-                <div class="card">
-                  <div class="item item-text-wrap">
-                    <p>Looks like you have no current studies.</p>
-                    <button class="button button-block button-energized">
-                      Setup a New Study
-                    </button>
-                  </div>
-                </div>
-              </ion-content>
-            </ion-pane>
-      </ion-view>
-    </script>
 
     <!-- build:js scripts/vendor.js -->
     <!-- <script src="vendor/someContribJs.js"></script> -->
