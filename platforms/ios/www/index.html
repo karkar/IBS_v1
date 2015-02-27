@@ -19,6 +19,12 @@
 
   <body ng-app="IBSTestV2" class="platform-ios platform-cordova platform-webview">
 
+    <ion-nav-bar class="bar-energized nav-title-slide-ios7">
+      <ion-nav-back-button class="button-clear">
+        <i class="ion-arrow-left-c"></i> Back
+      </ion-nav-back-button>
+    </ion-nav-bar>
+
     <ion-tabs class="tabs-positive tabs-icon-only">
 
       <ion-tab title="Schedule" icon-on="ion-ios7-calendar " icon-off="ion-ios7-calendar-outline" ui-sref="schedule">
@@ -43,101 +49,6 @@
 
     </ion-tabs>
 
-    <script type="text/ng-template" id="schedule.html">
-      <ion-view title="schedule">
-            <ion-pane>
-              <ion-header-bar class="bar-positive">
-                <h1 class="title">Schedule</h1>
-              </ion-header-bar>
-              <ion-content>
-
-              </ion-content>
-            </ion-pane>
-      </ion-view>
-    </script>
-
-    <script type="text/ng-template" id="symptoms.html">
-      <ion-view title="symptoms">
-            <ion-pane>
-              <ion-header-bar class="bar-positive">
-                <h1 class="title">Symptoms</h1>
-              </ion-header-bar>
-              <ion-content>
-
-              </ion-content>
-            </ion-pane>
-      </ion-view>
-    </script>
-
-    <script type="text/ng-template" id="past.html">
-        <ion-view title="past">
-            <ion-pane>
-              <ion-header-bar class="bar-positive">
-                <h1 class="title">Past Studies</h1>
-              </ion-header-bar>
-              <ion-content>
-                <div class="list">
-                    <a class="item">
-                        <div class="row">
-                            <div class="col col-67">
-                                <h2>Eating Dairy</h2>
-                                <p class="subdued">May 27th - June 3rd</p>
-                            </div>
-                            <div class="col">
-                                <h2 class="balanced"> 11% </h2>
-                                <p class="subdued">Strong<br>Indicator</p>
-                            </div>    
-                        </div>
-                    </a>
-                    <a class="item">
-                        <div class="row">
-                            <div class="col col-67">
-                                <h2>Eating Large Portions</h2>
-                                <p class="subdued">May 5th - May 27th</p>
-                            </div>
-                            <div class="col">
-                                <h2 class="energized"> 18% </h2>
-                                <p class="subdued">Weak<br>Indicator</p>
-                            </div>    
-                        </div>
-                    </a>
-                    <a class="item">
-                        <div class="row">
-                            <div class="col col-67">
-                                <h2>Caffeinated Drinks</h2>
-                                <p class="subdued">April 27th - April 18th</p>
-                            </div>
-                            <div class="col">
-                                <h2 class="royal"> 10% </h2>
-                                <p class="subdued">Inconclusive</p>
-                            </div>    
-                        </div>
-                    </a>
-                </div>
-              </ion-content>
-            </ion-pane>
-      </ion-view>
-    </script>
-
-    <script type="text/ng-template" id="setup.html">
-      <ion-view title="setup">
-            <ion-pane>
-              <ion-header-bar class="bar-positive">
-                <h1 class="title">Setup Study</h1>
-              </ion-header-bar>
-              <ion-content>
-                <div class="card">
-                  <div class="item item-text-wrap">
-                    <p>Looks like you have no current studies.</p>
-                    <button class="button button-block button-energized">
-                      Setup a New Study
-                    </button>
-                  </div>
-                </div>
-              </ion-content>
-            </ion-pane>
-      </ion-view>
-    </script>
 
     <!-- build:js scripts/vendor.js -->
     <!-- <script src="vendor/someContribJs.js"></script> -->

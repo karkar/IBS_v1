@@ -39,43 +39,77 @@ app.run(function($ionicPlatform) {
 });
 
 app.config(function($stateProvider, $urlRouterProvider) {
-  $urlRouterProvider.otherwise('/schedule')
+  $urlRouterProvider.otherwise('/')
 
-  $stateProvider.state('schedule', {
+  $stateProvider
+  .state('schedule', {
     url: '/schedule',
     views: {
       schedule : {
-        templateUrl: 'schedule.html'
+        templateUrl: 'templates/schedule.html'
       }
     }
   })
-
-  $stateProvider.state('symptoms', {
+  .state('symptoms', {
     url: '/symptoms',
     views: {
       symptoms : {
-        templateUrl: 'symptoms.html'
+        templateUrl: 'templates/symptoms.html'
       }
     }
   })
-
-  $stateProvider.state('past', {
+  .state('past', {
     url: '/past',
     views: {
       past : {
-        templateUrl: 'past.html'
+        templateUrl: 'templates/past.html'
       }
     }
   })
-
-  $stateProvider.state('setup', {
+  .state('setup', {
     url: '/setup',
     views: {
       setup : {
-        templateUrl: 'setup.html'
+        templateUrl: 'templates/setup.html'
+      }
+    }
+  })
+  .state('test', {
+    url: '/header_test',
+    views: {
+      setup : {
+        templateUrl: 'templates/header_test.html'
       }
     }
   })
 });
+
+
+app.controller('MainCtrl', function($scope, $ionicModal) {
+  $scope.contact = {
+    name: 'Mittens Cat',
+    info: 'Tap anywhere on the card to open the modal'
+  }
+
+  $ionicModal.fromTemplateUrl('templates/modal.html', {
+    scope: $scope,
+    animation: 'slide-in-up'
+  }).then(function(modal) {
+    $scope.modal = modal
+  })  
+
+  $scope.openModal = function() {
+    $scope.modal.show()
+  }
+
+  $scope.closeModal = function() {
+    $scope.modal.hide();
+  };
+
+  $scope.$on('$destroy', function() {
+    $scope.modal.remove();
+  });
+})
+
 
 
