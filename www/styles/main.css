@@ -1,1 +1,4 @@
 /* Your application styles go here */
+.ten-padding {
+    padding: 10px !important;
+}

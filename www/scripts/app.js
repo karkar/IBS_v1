@@ -74,6 +74,46 @@ app.config(function($stateProvider, $urlRouterProvider) {
       }
     }
   })
+  .state('setup2', {
+    url: '/setup2',
+    views: {
+      setup : {
+        templateUrl: 'templates/setup2.html'
+      }
+    }
+  })
+  .state('setup3', {
+    url: '/setup3',
+    views: {
+      setup : {
+        templateUrl: 'templates/setup3.html'
+      }
+    }
+  })
+  .state('setup3_2', {
+    url: '/setup3_2',
+    views: {
+      setup : {
+        templateUrl: 'templates/setup3_2.html'
+      }
+    }
+  })
+  .state('setup4', {
+    url: '/setup4',
+    views: {
+      setup : {
+        templateUrl: 'templates/setup4.html'
+      }
+    }
+  })
+  .state('setup5', {
+    url: '/setup5',
+    views: {
+      setup : {
+        templateUrl: 'templates/setup5.html'
+      }
+    }
+  })
   .state('test', {
     url: '/header_test',
     views: {
