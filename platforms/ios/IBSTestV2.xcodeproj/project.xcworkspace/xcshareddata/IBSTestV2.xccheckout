@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>8F90C3CD-7505-4EB5-A17E-0FA0BFC6FBE0</string>
+	<key>IDESourceControlProjectName</key>
+	<string>IBSTestV2</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>E37E0D6740D24DE8A959375887C9FF560498774B</key>
+		<string>https://github.com/karkar/IBS_v1.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>platforms/ios/IBSTestV2.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>E37E0D6740D24DE8A959375887C9FF560498774B</key>
+		<string>../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/karkar/IBS_v1.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>E37E0D6740D24DE8A959375887C9FF560498774B</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>E37E0D6740D24DE8A959375887C9FF560498774B</string>
+			<key>IDESourceControlWCCName</key>
+			<string>IBS%20Test%20v2</string>
+		</dict>
+	</array>
+</dict>
+</plist>
