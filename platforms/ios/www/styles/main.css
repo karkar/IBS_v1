@@ -1,1 +1,12 @@
 /* Your application styles go here */
+.ten-padding {
+    padding: 10px !important;
+}
+
+.nfive-padding {
+	padding: -5px !important;
+}
+
+.zero-padding {
+	padding: 0px !important;
+}

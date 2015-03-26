@@ -90,11 +90,35 @@ app.config(function($stateProvider, $urlRouterProvider) {
       }
     }
   })
+  .state('setup3_1', {
+    url: '/setup3_1',
+    views: {
+      setup : {
+        templateUrl: 'templates/setup3_1.html'
+      }
+    }
+  })
   .state('setup3_2', {
     url: '/setup3_2',
     views: {
       setup : {
         templateUrl: 'templates/setup3_2.html'
+      }
+    }
+  })
+  .state('setup3_3', {
+    url: '/setup3_3',
+    views: {
+      setup : {
+        templateUrl: 'templates/setup3_3.html'
+      }
+    }
+  })
+  .state('setup3_4', {
+    url: '/setup3_4',
+    views: {
+      setup : {
+        templateUrl: 'templates/setup3_4.html'
       }
     }
   })
