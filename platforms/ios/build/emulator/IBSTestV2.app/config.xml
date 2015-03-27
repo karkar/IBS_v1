@@ -34,6 +34,8 @@
     <feature name="Keyboard">
         <param name="ios-package" onload="true" value="IonicKeyboard" />
     </feature>
+    <icon height="60" src="icons/ios/icon-60.png" width="60" />
+    <icon height="120" src="icons/ios/icon-60@2x.png" width="120" />
     <name>IBSTestV2</name>
     <description>
         A sample Apache Cordova application that responds to the deviceready event.
