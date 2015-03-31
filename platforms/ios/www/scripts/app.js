@@ -149,5 +149,52 @@ app.config(function($stateProvider, $urlRouterProvider) {
 });
 
 
+app.controller( "SetupController", function( $scope, $window, $http) {
+    $http({
+        url: 'json/setup.json',
+        dataType: 'json',
+        method: 'GET',
+        data: '',
+        headers: {
+            "Content-Type": "application/json"
+        }
 
+    }).success(function(response){
+        $scope.text = response;
+    }).error(function(error){
+        $scope.text = 'error';
+    });        
+});
+/*
+<html ng-app="gemStore">
+  <head>
+    <link rel="stylesheet" type="text/css" href="bootstrap.min.css" />
+    <script type="text/javascript" src="angular.min.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+  </head>
+  <body class="container" ng-controller="StoreController as store">
+    <div class="product row" ng-repeat="product in store.products">
+      <h3>
+        {{product.name}}
+        <em class="pull-right">${{product.price}}</em>
+      </h3>
+    </div>
+  </body>
+</html>
+*/
+/*
+(function() {
+  var app = angular.module('gemStore', []);
+
+  app.controller('StoreController', function(){
+    this.products = gems;
+  });
+
+  var gems = [
+    { name: 'Azurite', price: 110.50 },
+    { name: 'Bloodstone', price: 22.90 },
+    { name: 'Zircon', price: 1100 },
+  ];
+})();
+*/
 
