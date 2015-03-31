@@ -6,13 +6,15 @@
     </description>
   <author email="dev@cordova.apache.org" href="http://cordova.io">
         Apache Cordova Team
-    </author>
-      <platform name="ios">
+  </author>
+  <platform name="ios">
     <!-- iOS 7.0+ -->
     <!-- iPhone / iPod Touch -->
-    <icon src="icons/ios/icon-60.png" width="60" height="60" />
-    <icon src="icons/ios/icon-60@2x.png" width="120" height="120" />
+    <icon src="resources/ios/icons/ios/icon-60.png" width="60" height="60" />
+    <icon src="resources/ios/ios/icon-60@2x.png" width="120" height="120" />
+    <splash src="resources/ios/splash/Default@2x~iphone.png" width="640" height="960"/>
   </platform>
+  <preference name="SplashScreenDelay" value="5000" />
   <content src="index.html"/>
   <access origin="*"/>
 

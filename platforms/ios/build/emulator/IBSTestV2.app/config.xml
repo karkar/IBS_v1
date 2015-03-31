@@ -34,15 +34,17 @@
     <feature name="Keyboard">
         <param name="ios-package" onload="true" value="IonicKeyboard" />
     </feature>
-    <icon height="60" src="icons/ios/icon-60.png" width="60" />
-    <icon height="120" src="icons/ios/icon-60@2x.png" width="120" />
+    <icon height="60" src="resources/ios/icons/ios/icon-60.png" width="60" />
+    <icon height="120" src="resources/ios/ios/icon-60@2x.png" width="120" />
+    <splash height="960" src="resources/ios/splash/Default@2x~iphone.png" width="640" />
     <name>IBSTestV2</name>
     <description>
         A sample Apache Cordova application that responds to the deviceready event.
     </description>
     <author email="dev@cordova.apache.org" href="http://cordova.io">
         Apache Cordova Team
-    </author>
+  </author>
+    <preference name="SplashScreenDelay" value="5000" />
     <content src="index.html" />
     <access origin="*" />
 </widget>
