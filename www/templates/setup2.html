@@ -1,10 +1,9 @@
       <ion-view title="Study Setup (1 of 4)">
           <ion-pane>
-          <ion-content>   
-            <div class="ten-padding">      
-              <h3 class="title">1. Choose Symptoms</h3>
-              <p>What symptoms do you want to test? <i class="ion-information-circled"></i></p>
-
+          <ion-content ng-controller="SetupController2 as SetupCont2">   
+            <div class="ten-padding" ng-bind-html="title"> </div>      
+              
+            <div>
               <ul class="list">
                 <li class="item item-checkbox"><label class="checkbox"><input type="checkbox"></label>Abdominal Pain</li>
                 <li class="item item-checkbox"><label class="checkbox"><input type="checkbox"></label>Bloating or Gas</li>

@@ -149,7 +149,7 @@ app.config(function($stateProvider, $urlRouterProvider) {
 });
 
 
-app.controller( "SetupController", function( $scope, $window, $http, $sce) {
+app.controller( "SetupController", function( $scope, $http, $sce) {
     $http({
         url: 'json/setup.json',
         dataType: 'json',
@@ -160,15 +160,30 @@ app.controller( "SetupController", function( $scope, $window, $http, $sce) {
         },
 
     }).success(function(response){
-        $scope.rawHtml = $sce.trustAsHtml(response.content);
+        $scope.title = $sce.trustAsHtml(response.title);
+        $scope.content = $sce.trustAsHtml(response.content);
     }).error(function(error){
         $scope.text = 'error';
     });        
-
-
-
 }); 
 
+app.controller( "SetupController2", function( $scope, $http, $sce) {
+    $http({
+        url: 'json/setup.json',
+        dataType: 'json',
+        method: 'GET',
+        data: '',
+        headers: {
+            "Content-Type": "application/json"
+        },
+
+    }).success(function(response){
+        $scope.title = $sce.trustAsHtml(response.title);
+        $scope.content = $sce.trustAsHtml(response.content);
+    }).error(function(error){
+        $scope.text = 'error';
+    });        
+}); 
 
 
 /*

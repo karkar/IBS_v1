@@ -4,11 +4,11 @@
 
             <div class="row">
                 <div class="col"><i class="ion-calendar font-big"></i></div>
-                <div class="col col-80"><h3 class="title">Setup a new study</h3></div>
+                <div class="col col-80" ng-bind-html="title"></div>
             </div>      
-            <div class="ten-padding" ng-bind-html="rawHtml">      
-              
-
+            <div class="ten-padding" ng-bind-html="content">      
+             </div> 
+           </div>
           <a class="button button-block button-energized" ui-sref="setup2">
             Let's Begin! <!-- icon ion-plus-round -->
           </a>
