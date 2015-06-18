@@ -22,7 +22,7 @@
 });
 */
 
-var app = angular.module('IBSTestV2', ['ionic'])
+var app = angular.module('IBSTestV2', ['ionic', 'ngSanitize'])
 
 app.run(function($ionicPlatform) {
   $ionicPlatform.ready(function() {
@@ -149,7 +149,7 @@ app.config(function($stateProvider, $urlRouterProvider) {
 });
 
 
-app.controller( "SetupController", function( $scope, $window, $http) {
+app.controller( "SetupController", function( $scope, $window, $http, $sce) {
     $http({
         url: 'json/setup.json',
         dataType: 'json',
@@ -157,14 +157,20 @@ app.controller( "SetupController", function( $scope, $window, $http) {
         data: '',
         headers: {
             "Content-Type": "application/json"
-        }
+        },
 
     }).success(function(response){
-        $scope.text = response;
+        $scope.rawHtml = $sce.trustAsHtml(response.content);
     }).error(function(error){
         $scope.text = 'error';
     });        
-});
+
+
+
+}); 
+
+
+
 /*
 <html ng-app="gemStore">
   <head>
